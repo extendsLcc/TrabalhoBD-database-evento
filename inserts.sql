@@ -1,83 +1,93 @@
-INSERT INTO `eventos`.`local` (`nome`) VALUES ('IFPR - Campus Umuarama');
-INSERT INTO `eventos`.`local` (`nome`) VALUES ('UNIPAR Cede - Universidade Paranaense');
-INSERT INTO `eventos`.`local` (`nome`) VALUES ('Faculdade ALFA de Umuarama');
+/*  LOCAL   */
+INSERT INTO `eventos`.`local` (`idLocal`, `nome`) VALUES ('1', 'IFPR - Campus Umuarama');
+INSERT INTO `eventos`.`local` (`idLocal`, `nome`) VALUES ('2', 'UNIPAR Cede - Universidade Paranaense');
+INSERT INTO `eventos`.`local` (`idLocal`, `nome`) VALUES ('3', 'Faculdade ALFA de Umuarama');
 
+/*  INSTITUIÇÃO */
+INSERT INTO `eventos`.`instituicao` (`idInstituicao`,`nome`) VALUES ('1', 'IFPR');
+INSERT INTO `eventos`.`instituicao` (`idInstituicao`,`nome`) VALUES ('2', 'Unipar');
+INSERT INTO `eventos`.`instituicao` (`idInstituicao`,`nome`) VALUES ('3', 'Faculdade Alfa');
+INSERT INTO `eventos`.`instituicao` (`idInstituicao`,`nome`) VALUES ('4', 'UEM');
 
-INSERT INTO `eventos`.`instituicao` (`nome`) VALUES ('IFPR');
-INSERT INTO `eventos`.`instituicao` (`nome`) VALUES ('Unipar');
-INSERT INTO `eventos`.`instituicao` (`nome`) VALUES ('Faculdade Alfa');
-INSERT INTO `eventos`.`instituicao` (`nome`) VALUES ('UEM');
+/*  EVENTOS */
+INSERT INTO `eventos`.`evento` (`idEvento`, `nome`, `dataInicio`, `dataFim`, `Local_idLocal`) VALUES ('1', 'III BRINFU - BIENAL REGIONAL DE INFORMÁTICA DE UMUARAMA', '2018-08-22', '2018-08-24', '2');
+INSERT INTO `eventos`.`evento` (`idEvento`, `nome`, `dataInicio`, `dataFim`, `Local_idLocal`) VALUES ('2', 'VII SETEC', '2019-09-16', '2019-09-21', '1');
 
+/*  GRAU DE INSTRUÇÃO   */
+INSERT INTO `eventos`.`grauinstrucao` (`idGrauInstrucao`, `nome`) VALUES ('1', 'Analfabeto');
+INSERT INTO `eventos`.`grauinstrucao` (`idGrauInstrucao`, `nome`) VALUES ('2', 'Ensino fundamental incompleto');
+INSERT INTO `eventos`.`grauinstrucao` (`idGrauInstrucao`, `nome`) VALUES ('3', 'Ensino fundamental completo');
+INSERT INTO `eventos`.`grauinstrucao` (`idGrauInstrucao`, `nome`) VALUES ('4', 'Ensino médio incompleto');
+INSERT INTO `eventos`.`grauinstrucao` (`idGrauInstrucao`, `nome`) VALUES ('5', 'Ensino médio completo');
+INSERT INTO `eventos`.`grauinstrucao` (`idGrauInstrucao`, `nome`) VALUES ('6', 'Superior completo');
+INSERT INTO `eventos`.`grauinstrucao` (`idGrauInstrucao`, `nome`) VALUES ('7', 'Pós-graduação');
+INSERT INTO `eventos`.`grauinstrucao` (`idGrauInstrucao`, `nome`) VALUES ('8', 'Mestrado');
+INSERT INTO `eventos`.`grauinstrucao` (`idGrauInstrucao`, `nome`) VALUES ('9', 'Doutorado');
+INSERT INTO `eventos`.`grauinstrucao` (`idGrauInstrucao`, `nome`) VALUES ('10', 'Pós-Doutorado');
 
-INSERT INTO `eventos`.`grauinstrucao` (`nome`) VALUES ('Ensino Fuldamental Analfabeto');
-INSERT INTO `eventos`.`grauinstrucao` (`nome`) VALUES ('Ensino fundamental incompleto');
-INSERT INTO `eventos`.`grauinstrucao` (`nome`) VALUES ('Ensino fundamental completo');
-INSERT INTO `eventos`.`grauinstrucao` (`nome`) VALUES ('Ensino médio incompleto');
-INSERT INTO `eventos`.`grauinstrucao` (`nome`) VALUES ('Ensino médio completo');
-INSERT INTO `eventos`.`grauinstrucao` (`nome`) VALUES ('Superior completo');
-INSERT INTO `eventos`.`grauinstrucao` (`nome`) VALUES ('Pós-graduação');
-INSERT INTO `eventos`.`grauinstrucao` (`nome`) VALUES ('Mestrado');
-INSERT INTO `eventos`.`grauinstrucao` (`nome`) VALUES ('Doutorado');
-INSERT INTO `eventos`.`grauinstrucao` (`nome`) VALUES ('Pós-Doutorado');
+/*  FUNÇÃO DO ORGANIZADOR   */
+INSERT INTO `eventos`.`funcao` (`idFuncao`, `nome`) VALUES ('1','Monitor');
+INSERT INTO `eventos`.`funcao` (`idFuncao`, `nome`) VALUES ('2','Assistente de Sala');
+INSERT INTO `eventos`.`funcao` (`idFuncao`, `nome`) VALUES ('3','Orientador');
+INSERT INTO `eventos`.`funcao` (`idFuncao`, `nome`) VALUES ('4','Técnico de Laboratório');
+INSERT INTO `eventos`.`funcao` (`idFuncao`, `nome`) VALUES ('5','Divulgador');
+INSERT INTO `eventos`.`funcao` (`idFuncao`, `nome`) VALUES ('6','Coordenador');
 
-
-INSERT INTO `eventos`.`funcao` (`nome`) VALUES ('Monitor');
-INSERT INTO `eventos`.`funcao` (`nome`) VALUES ('Assistente de Sala');
-INSERT INTO `eventos`.`funcao` (`nome`) VALUES ('Orientador');
-INSERT INTO `eventos`.`funcao` (`nome`) VALUES ('Técnico de Laboratório');
-INSERT INTO `eventos`.`funcao` (`nome`) VALUES ('Divulgador');
-INSERT INTO `eventos`.`funcao` (`nome`) VALUES ('Coordenador');
-
-/* Participantes */
-INSERT INTO `eventos`.`pessoa`(nome,cpf,telefone) VALUES ('Eduarda Andreia Daiane Nogueira','947.369.905-03','(67) 98389-5290');
-INSERT INTO `eventos`.`pessoa`(nome,cpf,telefone) VALUES ('Paulo Gustavo Souza','056.851.142-57','(31) 98583-5327');
-INSERT INTO `eventos`.`pessoa`(nome,cpf,telefone) VALUES ('Breno Ruan Sebastião Gomes','689.424.842-71','(69) 98982-4450');
-INSERT INTO `eventos`.`pessoa`(nome,cpf,telefone) VALUES ('Alexandre Eduardo Bryan da Silva','654.809.408-56','(96) 99390-8664');
-INSERT INTO `eventos`.`pessoa`(nome,cpf,telefone) VALUES ('Eloá Sophia Viana','192.289.920-85','(63) 99573-1051');
-INSERT INTO `eventos`.`pessoa`(nome,cpf,telefone) VALUES ('Ruan César Mendes','258.980.031-26','(92) 99681-6905');
-INSERT INTO `eventos`.`pessoa`(nome,cpf,telefone) VALUES ('Beatriz Hadassa Manuela da Cruz','549.609.652-90','(54) 99540-2570');
-INSERT INTO `eventos`.`pessoa`(nome,cpf,telefone) VALUES ('Cauê Levi da Luz','064.466.046-53','(94) 98842-1759');
-INSERT INTO `eventos`.`pessoa`(nome,cpf,telefone) VALUES ('Renato Sebastião Gael Martins','581.012.762-20','(62) 98146-6725');
-INSERT INTO `eventos`.`pessoa`(nome,cpf,telefone) VALUES ('Edson Miguel Nogueira','062.439.254-63','(44) 98703-7199');
-INSERT INTO `eventos`.`pessoa`(nome,cpf,telefone) VALUES ('Eloá Pietra Nunes','269.207.497-18','(21) 99312-7243');
-INSERT INTO `eventos`.`pessoa`(nome,cpf,telefone) VALUES ('Flávia Maya Melo','996.179.611-05','(82) 99245-4350');
-INSERT INTO `eventos`.`pessoa`(nome,cpf,telefone) VALUES ('Lucas Enrico Novaes','996.350.601-14','(98) 99518-2403');
-INSERT INTO `eventos`.`pessoa`(nome,cpf,telefone) VALUES ('Stefany Marli Moura','815.630.669-47','(68) 99828-4666');
-INSERT INTO `eventos`.`pessoa`(nome,cpf,telefone) VALUES ('Luzia Maria Farias','150.907.560-74','(69) 98181-3149');
-INSERT INTO `eventos`.`pessoa`(nome,cpf,telefone) VALUES ('Benjamin Nathan Cardoso','104.027.177-40','(11) 98923-1330');
-INSERT INTO `eventos`.`pessoa`(nome,cpf,telefone) VALUES ('Leandro Lorenzo Renato Sales','594.736.066-72','(63) 99823-8024');
-INSERT INTO `eventos`.`pessoa`(nome,cpf,telefone) VALUES ('Carlos Eduardo Thiago Marcos Vinicius Peixoto','252.580.514-39','(21) 98866-3811');
-INSERT INTO `eventos`.`pessoa`(nome,cpf,telefone) VALUES ('Lúcia Emilly Aragão','871.434.356-86','(82) 99367-7920');
-INSERT INTO `eventos`.`pessoa`(nome,cpf,telefone) VALUES ('Anthony Theo Rocha','756.324.345-32','(22) 99753-2628');
-INSERT INTO `eventos`.`pessoa`(nome,cpf,telefone) VALUES ('Renato Gabriel Murilo Moreira','745.072.253-45','(86) 98309-9077');
-INSERT INTO `eventos`.`pessoa`(nome,cpf,telefone) VALUES ('Ester Raimunda Moura','831.920.907-23','(27) 99942-7749');
-INSERT INTO `eventos`.`pessoa`(nome,cpf,telefone) VALUES ('Flávia Elza Rebeca Jesus','760.037.433-10','(95) 98443-2459');
-INSERT INTO `eventos`.`pessoa`(nome,cpf,telefone) VALUES ('Nathan Henry Almeida','168.501.950-18','(69) 98974-4161');
-INSERT INTO `eventos`.`pessoa`(nome,cpf,telefone) VALUES ('Lúcia Emilly da Mata','433.188.359-00','(84) 98421-1325');
-INSERT INTO `eventos`.`pessoa`(nome,cpf,telefone) VALUES ('Fabiana Manuela Novaes','927.238.563-64','(98) 98966-9952');
-INSERT INTO `eventos`.`pessoa`(nome,cpf,telefone) VALUES ('Larissa Ana Marlene Nunes','588.248.200-34','(91) 98435-9207');
-INSERT INTO `eventos`.`pessoa`(nome,cpf,telefone) VALUES ('Matheus Nathan Figueiredo','627.976.174-60','(41) 98955-3862');
-INSERT INTO `eventos`.`pessoa`(nome,cpf,telefone) VALUES ('Paulo Márcio Martins','738.391.254-30','(47) 98967-7726');
-INSERT INTO `eventos`.`pessoa`(nome,cpf,telefone) VALUES ('Theo Kaique Melo','913.591.327-40','(73) 98472-1213');
+/*  Participantes   */
+INSERT INTO `eventos`.`pessoa`(`idPessoa`, nome,cpf,telefone) VALUES ('1', 'Eduarda Andreia Daiane Nogueira','947.369.905-03','(67) 98389-5290');
+INSERT INTO `eventos`.`pessoa`(`idPessoa`, nome,cpf,telefone) VALUES ('2', 'Paulo Gustavo Souza','056.851.142-57','(31) 98583-5327');
+INSERT INTO `eventos`.`pessoa`(`idPessoa`, nome,cpf,telefone) VALUES ('3', 'Breno Ruan Sebastião Gomes','689.424.842-71','(69) 98982-4450');
+INSERT INTO `eventos`.`pessoa`(`idPessoa`, nome,cpf,telefone) VALUES ('4', 'Alexandre Eduardo Bryan da Silva','654.809.408-56','(96) 99390-8664');
+INSERT INTO `eventos`.`pessoa`(`idPessoa`, nome,cpf,telefone) VALUES ('5', 'Eloá Sophia Viana','192.289.920-85','(63) 99573-1051');
+INSERT INTO `eventos`.`pessoa`(`idPessoa`, nome,cpf,telefone) VALUES ('6', 'Ruan César Mendes','258.980.031-26','(92) 99681-6905');
+INSERT INTO `eventos`.`pessoa`(`idPessoa`, nome,cpf,telefone) VALUES ('7', 'Beatriz Hadassa Manuela da Cruz','549.609.652-90','(54) 99540-2570');
+INSERT INTO `eventos`.`pessoa`(`idPessoa`, nome,cpf,telefone) VALUES ('8', 'Cauê Levi da Luz','064.466.046-53','(94) 98842-1759');
+INSERT INTO `eventos`.`pessoa`(`idPessoa`, nome,cpf,telefone) VALUES ('9', 'Renato Sebastião Gael Martins','581.012.762-20','(62) 98146-6725');
+INSERT INTO `eventos`.`pessoa`(`idPessoa`, nome,cpf,telefone) VALUES ('10', 'Edson Miguel Nogueira','062.439.254-63','(44) 98703-7199');
+INSERT INTO `eventos`.`pessoa`(`idPessoa`, nome,cpf,telefone) VALUES ('11', 'Eloá Pietra Nunes','269.207.497-18','(21) 99312-7243');
+INSERT INTO `eventos`.`pessoa`(`idPessoa`, nome,cpf,telefone) VALUES ('12', 'Flávia Maya Melo','996.179.611-05','(82) 99245-4350');
+INSERT INTO `eventos`.`pessoa`(`idPessoa`, nome,cpf,telefone) VALUES ('13', 'Lucas Enrico Novaes','996.350.601-14','(98) 99518-2403');
+INSERT INTO `eventos`.`pessoa`(`idPessoa`, nome,cpf,telefone) VALUES ('14', 'Stefany Marli Moura','815.630.669-47','(68) 99828-4666');
+INSERT INTO `eventos`.`pessoa`(`idPessoa`, nome,cpf,telefone) VALUES ('15', 'Luzia Maria Farias','150.907.560-74','(69) 98181-3149');
+INSERT INTO `eventos`.`pessoa`(`idPessoa`, nome,cpf,telefone) VALUES ('16', 'Benjamin Nathan Cardoso','104.027.177-40','(11) 98923-1330');
+INSERT INTO `eventos`.`pessoa`(`idPessoa`, nome,cpf,telefone) VALUES ('17', 'Leandro Lorenzo Renato Sales','594.736.066-72','(63) 99823-8024');
+INSERT INTO `eventos`.`pessoa`(`idPessoa`, nome,cpf,telefone) VALUES ('18', 'Carlos Eduardo Thiago Marcos Vinicius Peixoto','252.580.514-39','(21) 98866-3811');
+INSERT INTO `eventos`.`pessoa`(`idPessoa`, nome,cpf,telefone) VALUES ('19', 'Lúcia Emilly Aragão','871.434.356-86','(82) 99367-7920');
+INSERT INTO `eventos`.`pessoa`(`idPessoa`, nome,cpf,telefone) VALUES ('20', 'Anthony Theo Rocha','756.324.345-32','(22) 99753-2628');
+INSERT INTO `eventos`.`pessoa`(`idPessoa`, nome,cpf,telefone) VALUES ('21', 'Renato Gabriel Murilo Moreira','745.072.253-45','(86) 98309-9077');
+INSERT INTO `eventos`.`pessoa`(`idPessoa`, nome,cpf,telefone) VALUES ('22', 'Ester Raimunda Moura','831.920.907-23','(27) 99942-7749');
+INSERT INTO `eventos`.`pessoa`(`idPessoa`, nome,cpf,telefone) VALUES ('23', 'Flávia Elza Rebeca Jesus','760.037.433-10','(95) 98443-2459');
+INSERT INTO `eventos`.`pessoa`(`idPessoa`, nome,cpf,telefone) VALUES ('24', 'Nathan Henry Almeida','168.501.950-18','(69) 98974-4161');
+INSERT INTO `eventos`.`pessoa`(`idPessoa`, nome,cpf,telefone) VALUES ('25', 'Lúcia Emilly da Mata','433.188.359-00','(84) 98421-1325');
+INSERT INTO `eventos`.`pessoa`(`idPessoa`, nome,cpf,telefone) VALUES ('26', 'Fabiana Manuela Novaes','927.238.563-64','(98) 98966-9952');
+INSERT INTO `eventos`.`pessoa`(`idPessoa`, nome,cpf,telefone) VALUES ('27', 'Larissa Ana Marlene Nunes','588.248.200-34','(91) 98435-9207');
+INSERT INTO `eventos`.`pessoa`(`idPessoa`, nome,cpf,telefone) VALUES ('28', 'Matheus Nathan Figueiredo','627.976.174-60','(41) 98955-3862');
+INSERT INTO `eventos`.`pessoa`(`idPessoa`, nome,cpf,telefone) VALUES ('29', 'Paulo Márcio Martins','738.391.254-30','(47) 98967-7726');
+INSERT INTO `eventos`.`pessoa`(`idPessoa`, nome,cpf,telefone) VALUES ('30', 'Theo Kaique Melo','913.591.327-40','(73) 98472-1213');
 
 /* Palestrantes */
-INSERT INTO `eventos`.`pessoa`(nome,cpf,telefone) VALUES ('Lucca Emanuel Henrique Melo','031.853.646-35','(83) 98271-5423');
-INSERT INTO `eventos`.`pessoa`(nome,cpf,telefone) VALUES ('Bernardo Thales Sebastião da Mata','414.130.553-70','(95) 99731-6658');
-INSERT INTO `eventos`.`pessoa`(nome,cpf,telefone) VALUES ('César Calebe Martin Nunes','737.804.386-90','(44) 98725-6843');
-INSERT INTO `eventos`.`pessoa`(nome,cpf,telefone) VALUES ('Rodrigo Caleb Alexandre Martins','138.796.239-61','(27) 99911-5521');
-INSERT INTO `eventos`.`pessoa`(nome,cpf,telefone) VALUES ('Ian Giovanni Levi Carvalho','140.265.886-96','(63) 98894-2689');
-INSERT INTO `eventos`.`pessoa`(nome,cpf,telefone) VALUES ('Eloá Flávia Helena Aragão','678.620.209-87','(96) 98236-7243');
-INSERT INTO `eventos`.`pessoa`(nome,cpf,telefone) VALUES ('Enzo Manuel Martins','876.559.091-05','(11) 98638-8054');
-INSERT INTO `eventos`.`pessoa`(nome,cpf,telefone) VALUES ('Oliver Nelson Bernardo Nogueira','638.428.062-05','(86) 98340-2859');
-INSERT INTO `eventos`.`pessoa`(nome,cpf,telefone) VALUES ('Paulo Daniel Baptista','263.665.515-88','(54) 98816-5566');
-INSERT INTO `eventos`.`pessoa`(nome,cpf,telefone) VALUES ('Lucca Emanuel Pedro Fernandes','245.890.565-00','(17) 98391-1908');
+INSERT INTO `eventos`.`pessoa`(`idPessoa`, nome,cpf,telefone) VALUES ('31', 'Lucca Emanuel Henrique Melo','031.853.646-35','(83) 98271-5423');
+INSERT INTO `eventos`.`pessoa`(`idPessoa`, nome,cpf,telefone) VALUES ('32', 'Bernardo Thales Sebastião da Mata','414.130.553-70','(95) 99731-6658');
+INSERT INTO `eventos`.`pessoa`(`idPessoa`, nome,cpf,telefone) VALUES ('33', 'César Calebe Martin Nunes','737.804.386-90','(44) 98725-6843');
+INSERT INTO `eventos`.`pessoa`(`idPessoa`, nome,cpf,telefone) VALUES ('34', 'Rodrigo Caleb Alexandre Martins','138.796.239-61','(27) 99911-5521');
+INSERT INTO `eventos`.`pessoa`(`idPessoa`, nome,cpf,telefone) VALUES ('35', 'Ian Giovanni Levi Carvalho','140.265.886-96','(63) 98894-2689');
+INSERT INTO `eventos`.`pessoa`(`idPessoa`, nome,cpf,telefone) VALUES ('36', 'Eloá Flávia Helena Aragão','678.620.209-87','(96) 98236-7243');
+INSERT INTO `eventos`.`pessoa`(`idPessoa`, nome,cpf,telefone) VALUES ('37', 'Enzo Manuel Martins','876.559.091-05','(11) 98638-8054');
+INSERT INTO `eventos`.`pessoa`(`idPessoa`, nome,cpf,telefone) VALUES ('38', 'Oliver Nelson Bernardo Nogueira','638.428.062-05','(86) 98340-2859');
+INSERT INTO `eventos`.`pessoa`(`idPessoa`, nome,cpf,telefone) VALUES ('39', 'Paulo Daniel Baptista','263.665.515-88','(54) 98816-5566');
+INSERT INTO `eventos`.`pessoa`(`idPessoa`, nome,cpf,telefone) VALUES ('40', 'Lucca Emanuel Pedro Fernandes','245.890.565-00','(17) 98391-1908');
 
 /* Organizadores */
-INSERT INTO `eventos`.`pessoa`(nome,cpf,telefone) VALUES ('Caio Leandro Melo','955.966.964-80','(68) 99534-9444');
-INSERT INTO `eventos`.`pessoa`(nome,cpf,telefone) VALUES ('Sebastiana Heloise Marcela Moreira','980.229.774-70','(93) 99553-5303');
-INSERT INTO `eventos`.`pessoa`(nome,cpf,telefone) VALUES ('Eloá Vitória Liz Duarte','192.628.032-65','(67) 99114-2951');
-INSERT INTO `eventos`.`pessoa`(nome,cpf,telefone) VALUES ('Isis Giovanna Teixeira','015.167.119-20','(91) 99373-6909');
-INSERT INTO `eventos`.`pessoa`(nome,cpf,telefone) VALUES ('Laís Hadassa Marlene Peixoto','356.093.992-54','(47) 98331-1340');
+INSERT INTO `eventos`.`pessoa`(`idPessoa`, nome,cpf,telefone) VALUES ('41', 'Caio Leandro Melo','955.966.964-80','(68) 99534-9444');
+INSERT INTO `eventos`.`pessoa`(`idPessoa`, nome,cpf,telefone) VALUES ('42', 'Sebastiana Heloise Marcela Moreira','980.229.774-70','(93) 99553-5303');
+INSERT INTO `eventos`.`pessoa`(`idPessoa`, nome,cpf,telefone) VALUES ('43', 'Eloá Vitória Liz Duarte','192.628.032-65','(67) 99114-2951');
+INSERT INTO `eventos`.`pessoa`(`idPessoa`, nome,cpf,telefone) VALUES ('44', 'Isis Giovanna Teixeira','015.167.119-20','(91) 99373-6909');
+INSERT INTO `eventos`.`pessoa`(`idPessoa`, nome,cpf,telefone) VALUES ('45', 'Laís Hadassa Marlene Peixoto','356.093.992-54','(47) 98331-1340');
+INSERT INTO `eventos`.`pessoa`(`idPessoa`, nome,cpf,telefone) VALUES ('46', 'Luzia Amanda Sebastiana Aragão','066.662.960-95','(98) 98480-0576');
+INSERT INTO `eventos`.`pessoa`(`idPessoa`, nome,cpf,telefone) VALUES ('47', 'Anthony Martin Raul Moreira','235.146.613-67','(91) 99650-6109');
+INSERT INTO `eventos`.`pessoa`(`idPessoa`, nome,cpf,telefone) VALUES ('48', 'Kauê César Porto','607.103.213-09','(92) 99886-8290');
+INSERT INTO `eventos`.`pessoa`(`idPessoa`, nome,cpf,telefone) VALUES ('49', 'Igor Sebastião Carvalho','680.559.849-48','(99) 99532-7595');
+INSERT INTO `eventos`.`pessoa`(`idPessoa`, nome,cpf,telefone) VALUES ('50', 'Caleb Bernardo Moreira','858.176.762-14','(96) 99628-2591');
 
 
 /* Participantes */
@@ -125,4 +135,17 @@ INSERT INTO `eventos`.`palestrante` (`Pessoa_idPessoa`,`email`) VALUES (39,"vita
 INSERT INTO `eventos`.`palestrante` (`Pessoa_idPessoa`,`email`) VALUES (40,"quis.urna.Nunc@rhoncus.co.uk");
 
 /*  Organizadores */
-
+INSERT INTO `eventos`.`organizador` (Pessoa_idPessoa, Evento_idEvento, Funcao_idFuncao) VALUES (48, 1, 5);
+INSERT INTO `eventos`.`organizador` (Pessoa_idPessoa, Evento_idEvento, Funcao_idFuncao) VALUES (48, 2, 2);
+INSERT INTO `eventos`.`organizador` (Pessoa_idPessoa, Evento_idEvento, Funcao_idFuncao) VALUES (41, 2, 1);
+INSERT INTO `eventos`.`organizador` (Pessoa_idPessoa, Evento_idEvento, Funcao_idFuncao) VALUES (47, 2, 1);
+INSERT INTO `eventos`.`organizador` (Pessoa_idPessoa, Evento_idEvento, Funcao_idFuncao) VALUES (42, 2, 1);
+INSERT INTO `eventos`.`organizador` (Pessoa_idPessoa, Evento_idEvento, Funcao_idFuncao) VALUES (44, 1, 3);
+INSERT INTO `eventos`.`organizador` (Pessoa_idPessoa, Evento_idEvento, Funcao_idFuncao) VALUES (49, 1, 4);
+INSERT INTO `eventos`.`organizador` (Pessoa_idPessoa, Evento_idEvento, Funcao_idFuncao) VALUES (43, 1, 2);
+INSERT INTO `eventos`.`organizador` (Pessoa_idPessoa, Evento_idEvento, Funcao_idFuncao) VALUES (44, 1, 4);
+INSERT INTO `eventos`.`organizador` (Pessoa_idPessoa, Evento_idEvento, Funcao_idFuncao) VALUES (45, 2, 2);
+INSERT INTO `eventos`.`organizador` (Pessoa_idPessoa, Evento_idEvento, Funcao_idFuncao) VALUES (46, 2, 2);
+INSERT INTO `eventos`.`organizador` (Pessoa_idPessoa, Evento_idEvento, Funcao_idFuncao) VALUES (48, 1, 4);
+INSERT INTO `eventos`.`organizador` (Pessoa_idPessoa, Evento_idEvento, Funcao_idFuncao) VALUES (49, 2, 6);
+INSERT INTO `eventos`.`organizador` (Pessoa_idPessoa, Evento_idEvento, Funcao_idFuncao) VALUES (41, 1, 6);
