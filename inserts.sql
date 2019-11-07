@@ -149,3 +149,61 @@ INSERT INTO `eventos`.`organizador` (Pessoa_idPessoa, Evento_idEvento, Funcao_id
 INSERT INTO `eventos`.`organizador` (Pessoa_idPessoa, Evento_idEvento, Funcao_idFuncao) VALUES (48, 1, 4);
 INSERT INTO `eventos`.`organizador` (Pessoa_idPessoa, Evento_idEvento, Funcao_idFuncao) VALUES (49, 2, 6);
 INSERT INTO `eventos`.`organizador` (Pessoa_idPessoa, Evento_idEvento, Funcao_idFuncao) VALUES (41, 1, 6);
+
+
+/*  Tipo de Atividade   */
+INSERT INTO `eventos`.`tipoatividade` (`idTipoAtividade`, `nome`) VALUES ('1', 'Palestra');
+INSERT INTO `eventos`.`tipoatividade` (`idTipoAtividade`, `nome`) VALUES ('2', 'Officina');
+INSERT INTO `eventos`.`tipoatividade` (`idTipoAtividade`, `nome`) VALUES ('3', 'Minicurso');
+
+/*  Sala    */
+INSERT INTO `eventos`.`sala` (`idSala`, `numero`, `nome`) VALUES ('1', '1', 'Laboratório de Quimica');
+INSERT INTO `eventos`.`sala` (`idSala`, `numero`, `nome`) VALUES ('2', '2', 'Quimica');
+INSERT INTO `eventos`.`sala` (`idSala`, `numero`, `nome`) VALUES ('3', '3', 'Quimica');
+INSERT INTO `eventos`.`sala` (`idSala`, `numero`, `nome`) VALUES ('4', '1', 'Sala de Aula');
+INSERT INTO `eventos`.`sala` (`idSala`, `numero`, `nome`) VALUES ('5', '4', 'Laboratório de Informatica');
+INSERT INTO `eventos`.`sala` (`idSala`, `numero`, `nome`) VALUES ('6', '3', 'Laboratório de Informatica');
+INSERT INTO `eventos`.`sala` (`idSala`, `numero`, `nome`) VALUES ('7', '2', 'Laboratório de Informatica');
+INSERT INTO `eventos`.`sala` (`idSala`, `numero`, `nome`) VALUES ('8', '1', 'Laboratório de Informatica');
+
+/*  Atividade   */
+INSERT INTO `eventos`.`atividade` (`idAtividade`,`titulo`,`descricao`,`limiteInscricoes`,`TipoAtividade_idTipoAtividade`,`Evento_idEvento`,`Palestrante_Pessoa_idPessoa`,`Sala_idSala`) VALUES (1,"Lance","dapibus rutrum, justo. Praesent luctus. Curabitur egestas nunc sed libero.",
+21,3,2,39,1);
+INSERT INTO `eventos`.`atividade` (`idAtividade`,`titulo`,`descricao`,`limiteInscricoes`,`TipoAtividade_idTipoAtividade`,`Evento_idEvento`,`Palestrante_Pessoa_idPessoa`,`Sala_idSala`) VALUES (2,"Christian","nec ante. Maecenas mi felis, adipiscing fringilla, porttitor vulputate, posuere",
+25,1,1,37,7);
+INSERT INTO `eventos`.`atividade` (`idAtividade`,`titulo`,`descricao`,`limiteInscricoes`,`TipoAtividade_idTipoAtividade`,`Evento_idEvento`,`Palestrante_Pessoa_idPessoa`,`Sala_idSala`) VALUES (3,"Zachery","blandit viverra. Donec tempus, lorem fringilla ornare placerat, orci lacus",
+27,2,2,37,2);
+INSERT INTO `eventos`.`atividade` (`idAtividade`,`titulo`,`descricao`,`limiteInscricoes`,`TipoAtividade_idTipoAtividade`,`Evento_idEvento`,`Palestrante_Pessoa_idPessoa`,`Sala_idSala`) VALUES (4,"Samuel","leo. Vivamus nibh dolor, nonummy ac, feugiat non, lobortis quis,",
+26,2,1,33,8);
+INSERT INTO `eventos`.`atividade` (`idAtividade`,`titulo`,`descricao`,`limiteInscricoes`,`TipoAtividade_idTipoAtividade`,`Evento_idEvento`,`Palestrante_Pessoa_idPessoa`,`Sala_idSala`) VALUES (5,"Xavier","enim, gravida sit amet, dapibus id, blandit at, nisi. Cum",
+21,3,2,34,6);
+INSERT INTO `eventos`.`atividade` (`idAtividade`,`titulo`,`descricao`,`limiteInscricoes`,`TipoAtividade_idTipoAtividade`,`Evento_idEvento`,`Palestrante_Pessoa_idPessoa`,`Sala_idSala`) VALUES (6,"Richard","Proin sed turpis nec mauris blandit mattis. Cras eget nisi",
+39,3,2,33,1);
+INSERT INTO `eventos`.`atividade` (`idAtividade`,`titulo`,`descricao`,`limiteInscricoes`,`TipoAtividade_idTipoAtividade`,`Evento_idEvento`,`Palestrante_Pessoa_idPessoa`,`Sala_idSala`) VALUES (7,"Wayne","ultrices sit amet, risus. Donec nibh enim, gravida sit amet,",
+34,3,2,34,1);
+INSERT INTO `eventos`.`atividade` (`idAtividade`,`titulo`,`descricao`,`limiteInscricoes`,`TipoAtividade_idTipoAtividade`,`Evento_idEvento`,`Palestrante_Pessoa_idPessoa`,`Sala_idSala`) VALUES (8,"Mark","erat volutpat. Nulla dignissim. Maecenas ornare egestas ligula. Nullam feugiat",
+22,2,2,36,4);
+INSERT INTO `eventos`.`atividade` (`idAtividade`,`titulo`,`descricao`,`limiteInscricoes`,`TipoAtividade_idTipoAtividade`,`Evento_idEvento`,`Palestrante_Pessoa_idPessoa`,`Sala_idSala`) VALUES (9,"Richard","luctus et ultrices posuere cubilia Curae; Phasellus ornare. Fusce mollis.",
+39,1,1,31,2);
+INSERT INTO `eventos`.`atividade` (`idAtividade`,`titulo`,`descricao`,`limiteInscricoes`,`TipoAtividade_idTipoAtividade`,`Evento_idEvento`,`Palestrante_Pessoa_idPessoa`,`Sala_idSala`) VALUES (10,"Asher","ut, molestie in, tempus eu, ligula. Aenean euismod mauris eu",
+26,3,2,31,5);
+INSERT INTO `eventos`.`atividade` (`idAtividade`,`titulo`,`descricao`,`limiteInscricoes`,`TipoAtividade_idTipoAtividade`,`Evento_idEvento`,`Palestrante_Pessoa_idPessoa`,`Sala_idSala`) VALUES (11,"Graham","ac tellus. Suspendisse sed dolor. Fusce mi lorem, vehicula et,",
+31,2,2,33,6);
+INSERT INTO `eventos`.`atividade` (`idAtividade`,`titulo`,`descricao`,`limiteInscricoes`,`TipoAtividade_idTipoAtividade`,`Evento_idEvento`,`Palestrante_Pessoa_idPessoa`,`Sala_idSala`) VALUES (12,"Arsenio","ornare, libero at auctor ullamcorper, nisl arcu iaculis enim, sit",
+32,2,1,37,8);
+INSERT INTO `eventos`.`atividade` (`idAtividade`,`titulo`,`descricao`,`limiteInscricoes`,`TipoAtividade_idTipoAtividade`,`Evento_idEvento`,`Palestrante_Pessoa_idPessoa`,`Sala_idSala`) VALUES (13,"Hop","molestie orci tincidunt adipiscing. Mauris molestie pharetra nibh. Aliquam ornare,",
+31,3,1,34,2);
+INSERT INTO `eventos`.`atividade` (`idAtividade`,`titulo`,`descricao`,`limiteInscricoes`,`TipoAtividade_idTipoAtividade`,`Evento_idEvento`,`Palestrante_Pessoa_idPessoa`,`Sala_idSala`) VALUES (14,"Francis","Morbi quis urna. Nunc quis arcu vel quam dignissim pharetra.",
+30,1,2,37,8);
+INSERT INTO `eventos`.`atividade` (`idAtividade`,`titulo`,`descricao`,`limiteInscricoes`,`TipoAtividade_idTipoAtividade`,`Evento_idEvento`,`Palestrante_Pessoa_idPessoa`,`Sala_idSala`) VALUES (15,"Hamish","ornare egestas ligula. Nullam feugiat placerat velit. Quisque varius. Nam",
+32,3,1,35,8);
+INSERT INTO `eventos`.`atividade` (`idAtividade`,`titulo`,`descricao`,`limiteInscricoes`,`TipoAtividade_idTipoAtividade`,`Evento_idEvento`,`Palestrante_Pessoa_idPessoa`,`Sala_idSala`) VALUES (16,"Hector","lacinia mattis. Integer eu lacus. Quisque imperdiet, erat nonummy ultricies",
+40,3,2,34,2);
+INSERT INTO `eventos`.`atividade` (`idAtividade`,`titulo`,`descricao`,`limiteInscricoes`,`TipoAtividade_idTipoAtividade`,`Evento_idEvento`,`Palestrante_Pessoa_idPessoa`,`Sala_idSala`) VALUES (17,"Norman","Mauris quis turpis vitae purus gravida sagittis. Duis gravida. Praesent",
+23,1,1,36,5);
+INSERT INTO `eventos`.`atividade` (`idAtividade`,`titulo`,`descricao`,`limiteInscricoes`,`TipoAtividade_idTipoAtividade`,`Evento_idEvento`,`Palestrante_Pessoa_idPessoa`,`Sala_idSala`) VALUES (18,"Joseph","habitant morbi tristique senectus et netus et malesuada fames ac",
+27,3,1,40,8);
+INSERT INTO `eventos`.`atividade` (`idAtividade`,`titulo`,`descricao`,`limiteInscricoes`,`TipoAtividade_idTipoAtividade`,`Evento_idEvento`,`Palestrante_Pessoa_idPessoa`,`Sala_idSala`) VALUES (19,"Jackson","sed pede nec ante blandit viverra. Donec tempus, lorem fringilla",
+31,3,2,39,1);
+INSERT INTO `eventos`.`atividade` (`idAtividade`,`titulo`,`descricao`,`limiteInscricoes`,`TipoAtividade_idTipoAtividade`,`Evento_idEvento`,`Palestrante_Pessoa_idPessoa`,`Sala_idSala`) VALUES (20,"Aaron","erat. Vivamus nisi. Mauris nulla. Integer urna. Vivamus molestie dapibus",
+34,3,1,37,8);
