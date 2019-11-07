@@ -113,3 +113,21 @@ entrega após a data.
 
 Entregas após a data não serão aceitas e a dupla que deixar de entregar o trabalho na data
 correta ou antes dela, receberá conceito D no trabalho.
+
+
+#GIT COMMANDOS
+
+git clone https://github.com/extendsLcc/trabalho-database.git
+
+
+** git add * **
+Adiciona todos os arquivos para zona de estagio
+
+** git commit -m "Menssagem do commit" **
+
+** git push **
+
+    envia alterações para o repositório
+    caso ocorrer problemas de remote origin , verifique a url 
+    ** git remote -v **
+    ** git remote set-url origin https://github.com/extendsLcc/trabalho-database.git **
