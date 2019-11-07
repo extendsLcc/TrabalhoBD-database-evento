@@ -172,7 +172,7 @@ INSERT INTO `eventos`.`CargaHoraria` (`idCargaHoraria`,`duracao`) VALUES (2,"4 h
 INSERT INTO `eventos`.`CargaHoraria` (`idCargaHoraria`,`duracao`) VALUES (3,"6 horas");
 INSERT INTO `eventos`.`CargaHoraria` (`idCargaHoraria`,`duracao`) VALUES (4,"8 horas");
 
-/*  Atividade   */
+/*  Atividade   20 */
 INSERT INTO `eventos`.`atividade` (`idAtividade`,`valor` ,`titulo`,`descricao`,`limiteInscricoes`,`TipoAtividade_idTipoAtividade`,`Evento_idEvento`,`Palestrante_Pessoa_idPessoa`,`Sala_idSala`, `CargaHoraria_idCargaHoraria`) VALUES (1,  10.0," Fundamentos de Gerenciamento de Projetos","dapibus rutrum, justo. Praesent luctus. Curabitur egestas nunc sed libero.", 21,3,2,39,1, 1 );
 INSERT INTO `eventos`.`atividade` (`idAtividade`,`valor` ,`titulo`,`descricao`,`limiteInscricoes`,`TipoAtividade_idTipoAtividade`,`Evento_idEvento`,`Palestrante_Pessoa_idPessoa`,`Sala_idSala`, `CargaHoraria_idCargaHoraria`) VALUES (2,  20.0," Utilização de óleo vegetal residual como incentivo a educação ambiental","nec ante. Maecenas mi felis, adipiscing fringilla, porttitor vulputate, posuere", 25,1,1,37,7, 2 );
 INSERT INTO `eventos`.`atividade` (`idAtividade`,`valor` ,`titulo`,`descricao`,`limiteInscricoes`,`TipoAtividade_idTipoAtividade`,`Evento_idEvento`,`Palestrante_Pessoa_idPessoa`,`Sala_idSala`, `CargaHoraria_idCargaHoraria`) VALUES (3,  30.0," Arte e saúde mental: vivenciando a cor a partir da aquarela","blandit viverra. Donec tempus, lorem fringilla ornare placerat, orci lacus", 27,2,2,37,2, 3 );
@@ -229,21 +229,39 @@ INSERT INTO `eventos`.`inscricao` (`idInscricao`,`dataInscricao`,`Participante_P
 /*  inscricao Atividade     */
 INSERT INTO `eventos`.`inscricaoatividade` (`idInscricaoAtividade`,`Atividade_idAtividade`,`Inscricao_idInscricao`,`dataPagamento`) VALUES (1,20,1,"1969-12-31");
 INSERT INTO `eventos`.`inscricaoatividade` (`idInscricaoAtividade`,`Atividade_idAtividade`,`Inscricao_idInscricao`,`dataPagamento`) VALUES (2,4,1,"1969-12-31");
-INSERT INTO `eventos`.`inscricaoatividade` (`idInscricaoAtividade`,`Atividade_idAtividade`,`Inscricao_idInscricao`,`dataPagamento`) VALUES (3,6,2,"1969-12-31");
+INSERT INTO `eventos`.`inscricaoatividade` (`idInscricaoAtividade`,`Atividade_idAtividade`,`Inscricao_idInscricao`,`dataPagamento`) VALUES (3,6,2, NULL);
 INSERT INTO `eventos`.`inscricaoatividade` (`idInscricaoAtividade`,`Atividade_idAtividade`,`Inscricao_idInscricao`,`dataPagamento`) VALUES (4,8,3,"1969-12-31");
-INSERT INTO `eventos`.`inscricaoatividade` (`idInscricaoAtividade`,`Atividade_idAtividade`,`Inscricao_idInscricao`,`dataPagamento`) VALUES (5,15,4,"1969-12-31");
+INSERT INTO `eventos`.`inscricaoatividade` (`idInscricaoAtividade`,`Atividade_idAtividade`,`Inscricao_idInscricao`,`dataPagamento`) VALUES (5,15,4,NULL);
 INSERT INTO `eventos`.`inscricaoatividade` (`idInscricaoAtividade`,`Atividade_idAtividade`,`Inscricao_idInscricao`,`dataPagamento`) VALUES (6,18,5,"1969-12-31");
-INSERT INTO `eventos`.`inscricaoatividade` (`idInscricaoAtividade`,`Atividade_idAtividade`,`Inscricao_idInscricao`,`dataPagamento`) VALUES (7,20,6,"1969-12-31");
+INSERT INTO `eventos`.`inscricaoatividade` (`idInscricaoAtividade`,`Atividade_idAtividade`,`Inscricao_idInscricao`,`dataPagamento`) VALUES (7,20,5,"1969-12-31");
 INSERT INTO `eventos`.`inscricaoatividade` (`idInscricaoAtividade`,`Atividade_idAtividade`,`Inscricao_idInscricao`,`dataPagamento`) VALUES (8,13,7,"1969-12-31");
 INSERT INTO `eventos`.`inscricaoatividade` (`idInscricaoAtividade`,`Atividade_idAtividade`,`Inscricao_idInscricao`,`dataPagamento`) VALUES (9,19,8,"1969-12-31");
 INSERT INTO `eventos`.`inscricaoatividade` (`idInscricaoAtividade`,`Atividade_idAtividade`,`Inscricao_idInscricao`,`dataPagamento`) VALUES (10,6,9,"1969-12-31");
-INSERT INTO `eventos`.`inscricaoatividade` (`idInscricaoAtividade`,`Atividade_idAtividade`,`Inscricao_idInscricao`,`dataPagamento`) VALUES (11,17,10,"1969-12-31");
-INSERT INTO `eventos`.`inscricaoatividade` (`idInscricaoAtividade`,`Atividade_idAtividade`,`Inscricao_idInscricao`,`dataPagamento`) VALUES (12,1,11,"1969-12-31");
+INSERT INTO `eventos`.`inscricaoatividade` (`idInscricaoAtividade`,`Atividade_idAtividade`,`Inscricao_idInscricao`,`dataPagamento`) VALUES (11,17,10,NULL);
+INSERT INTO `eventos`.`inscricaoatividade` (`idInscricaoAtividade`,`Atividade_idAtividade`,`Inscricao_idInscricao`,`dataPagamento`) VALUES (12,1,10,"1969-12-31");
 INSERT INTO `eventos`.`inscricaoatividade` (`idInscricaoAtividade`,`Atividade_idAtividade`,`Inscricao_idInscricao`,`dataPagamento`) VALUES (13,3,12,"1969-12-31");
-INSERT INTO `eventos`.`inscricaoatividade` (`idInscricaoAtividade`,`Atividade_idAtividade`,`Inscricao_idInscricao`,`dataPagamento`) VALUES (14,16,13,"1969-12-31");
+INSERT INTO `eventos`.`inscricaoatividade` (`idInscricaoAtividade`,`Atividade_idAtividade`,`Inscricao_idInscricao`,`dataPagamento`) VALUES (14,16,13,NULL);
 INSERT INTO `eventos`.`inscricaoatividade` (`idInscricaoAtividade`,`Atividade_idAtividade`,`Inscricao_idInscricao`,`dataPagamento`) VALUES (15,12,14,"1969-12-31");
 INSERT INTO `eventos`.`inscricaoatividade` (`idInscricaoAtividade`,`Atividade_idAtividade`,`Inscricao_idInscricao`,`dataPagamento`) VALUES (16,14,15,"1969-12-31");
-INSERT INTO `eventos`.`inscricaoatividade` (`idInscricaoAtividade`,`Atividade_idAtividade`,`Inscricao_idInscricao`,`dataPagamento`) VALUES (17,11,16,"1969-12-31");
+INSERT INTO `eventos`.`inscricaoatividade` (`idInscricaoAtividade`,`Atividade_idAtividade`,`Inscricao_idInscricao`,`dataPagamento`) VALUES (17,11,15, NULL);
 INSERT INTO `eventos`.`inscricaoatividade` (`idInscricaoAtividade`,`Atividade_idAtividade`,`Inscricao_idInscricao`,`dataPagamento`) VALUES (18,17,17,"1969-12-31");
 INSERT INTO `eventos`.`inscricaoatividade` (`idInscricaoAtividade`,`Atividade_idAtividade`,`Inscricao_idInscricao`,`dataPagamento`) VALUES (19,13,18,"1969-12-31");
 INSERT INTO `eventos`.`inscricaoatividade` (`idInscricaoAtividade`,`Atividade_idAtividade`,`Inscricao_idInscricao`,`dataPagamento`) VALUES (20,10,19,"1969-12-31");
+INSERT INTO `eventos`.`inscricaoatividade` (`idInscricaoAtividade`,`Atividade_idAtividade`,`Inscricao_idInscricao`,`dataPagamento`) VALUES (21,19,20, NULL);
+INSERT INTO `eventos`.`inscricaoatividade` (`idInscricaoAtividade`,`Atividade_idAtividade`,`Inscricao_idInscricao`,`dataPagamento`) VALUES (22,8,20,"1969-12-31");
+INSERT INTO `eventos`.`inscricaoatividade` (`idInscricaoAtividade`,`Atividade_idAtividade`,`Inscricao_idInscricao`,`dataPagamento`) VALUES (23,14,22,"1969-12-31");
+INSERT INTO `eventos`.`inscricaoatividade` (`idInscricaoAtividade`,`Atividade_idAtividade`,`Inscricao_idInscricao`,`dataPagamento`) VALUES (24,12,23,"1969-12-31");
+INSERT INTO `eventos`.`inscricaoatividade` (`idInscricaoAtividade`,`Atividade_idAtividade`,`Inscricao_idInscricao`,`dataPagamento`) VALUES (25,12,24, NULL);
+INSERT INTO `eventos`.`inscricaoatividade` (`idInscricaoAtividade`,`Atividade_idAtividade`,`Inscricao_idInscricao`,`dataPagamento`) VALUES (26,6,25,"1969-12-31");
+INSERT INTO `eventos`.`inscricaoatividade` (`idInscricaoAtividade`,`Atividade_idAtividade`,`Inscricao_idInscricao`,`dataPagamento`) VALUES (27,1,25,"1969-12-31");
+INSERT INTO `eventos`.`inscricaoatividade` (`idInscricaoAtividade`,`Atividade_idAtividade`,`Inscricao_idInscricao`,`dataPagamento`) VALUES (28,2,27,"1969-12-31");
+INSERT INTO `eventos`.`inscricaoatividade` (`idInscricaoAtividade`,`Atividade_idAtividade`,`Inscricao_idInscricao`,`dataPagamento`) VALUES (29,16,28, NULL);
+INSERT INTO `eventos`.`inscricaoatividade` (`idInscricaoAtividade`,`Atividade_idAtividade`,`Inscricao_idInscricao`,`dataPagamento`) VALUES (30,15,29,"1969-12-31");
+INSERT INTO `eventos`.`inscricaoatividade` (`idInscricaoAtividade`,`Atividade_idAtividade`,`Inscricao_idInscricao`,`dataPagamento`) VALUES (31,6,30,"1969-12-31");
+
+/*  Despesas    */
+INSERT INTO `eventos`.`despesa` (`idDespesa`,`Descricao`,`data`,`valor`,`Atividade_idAtividade`,`Evento_idEvento`) VALUES (1,"orci luctus et ultrices","2019-08-30",1,NULL,2);
+INSERT INTO `eventos`.`despesa` (`idDespesa`,`Descricao`,`data`,`valor`,`Atividade_idAtividade`,`Evento_idEvento`) VALUES (2,"tincidunt, neque vitae semper","2020-07-12",2,14,2);
+INSERT INTO `eventos`.`despesa` (`idDespesa`,`Descricao`,`data`,`valor`,`Atividade_idAtividade`,`Evento_idEvento`) VALUES (3,"ut, sem. Nulla interdum.","2019-06-24",3, NULL,2);
+INSERT INTO `eventos`.`despesa` (`idDespesa`,`Descricao`,`data`,`valor`,`Atividade_idAtividade`,`Evento_idEvento`) VALUES (4,"Donec non justo. Proin","2019-09-11",4,12,1);
+INSERT INTO `eventos`.`despesa` (`idDespesa`,`Descricao`,`data`,`valor`,`Atividade_idAtividade`,`Evento_idEvento`) VALUES (5,"sapien imperdiet ornare. In","2019-02-25",5, NULL,2);
