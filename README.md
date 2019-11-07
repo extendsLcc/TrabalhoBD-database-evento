@@ -120,14 +120,14 @@ correta ou antes dela, receberá conceito D no trabalho.
     git clone https://github.com/extendsLcc/trabalho-database.git
 
 
-#    ** git add * **
+#    git add *
 Adiciona todos os arquivos para zona de estagio
 
-#   ** git commit -m "Menssagem do commit" **
+#   git commit -m "Menssagem do commit"
 
-#   ** git push **
+#   git push
 
     envia alterações para o repositório
     caso ocorrer problemas de remote origin , verifique a url 
-#    ** git remote -v **
-#    ** git remote set-url origin https://github.com/extendsLcc/trabalho-database.git **
+#    git remote -v
+#    git remote set-url origin https://github.com/extendsLcc/trabalho-database.git
