@@ -166,44 +166,30 @@ INSERT INTO `eventos`.`sala` (`idSala`, `numero`, `nome`) VALUES ('6', '3', 'Lab
 INSERT INTO `eventos`.`sala` (`idSala`, `numero`, `nome`) VALUES ('7', '2', 'Laboratório de Informatica');
 INSERT INTO `eventos`.`sala` (`idSala`, `numero`, `nome`) VALUES ('8', '1', 'Laboratório de Informatica');
 
+/*  Carga Horaria   */
+INSERT INTO `eventos`.`CargaHoraria` (`idCargaHoraria`,`duracao`) VALUES (1,"2 horas");
+INSERT INTO `eventos`.`CargaHoraria` (`idCargaHoraria`,`duracao`) VALUES (2,"4 horas");
+INSERT INTO `eventos`.`CargaHoraria` (`idCargaHoraria`,`duracao`) VALUES (3,"6 horas");
+INSERT INTO `eventos`.`CargaHoraria` (`idCargaHoraria`,`duracao`) VALUES (4,"8 horas");
+
 /*  Atividade   */
-INSERT INTO `eventos`.`atividade` (`idAtividade`,`titulo`,`descricao`,`limiteInscricoes`,`TipoAtividade_idTipoAtividade`,`Evento_idEvento`,`Palestrante_Pessoa_idPessoa`,`Sala_idSala`) VALUES (1,"Lance","dapibus rutrum, justo. Praesent luctus. Curabitur egestas nunc sed libero.",
-21,3,2,39,1);
-INSERT INTO `eventos`.`atividade` (`idAtividade`,`titulo`,`descricao`,`limiteInscricoes`,`TipoAtividade_idTipoAtividade`,`Evento_idEvento`,`Palestrante_Pessoa_idPessoa`,`Sala_idSala`) VALUES (2,"Christian","nec ante. Maecenas mi felis, adipiscing fringilla, porttitor vulputate, posuere",
-25,1,1,37,7);
-INSERT INTO `eventos`.`atividade` (`idAtividade`,`titulo`,`descricao`,`limiteInscricoes`,`TipoAtividade_idTipoAtividade`,`Evento_idEvento`,`Palestrante_Pessoa_idPessoa`,`Sala_idSala`) VALUES (3,"Zachery","blandit viverra. Donec tempus, lorem fringilla ornare placerat, orci lacus",
-27,2,2,37,2);
-INSERT INTO `eventos`.`atividade` (`idAtividade`,`titulo`,`descricao`,`limiteInscricoes`,`TipoAtividade_idTipoAtividade`,`Evento_idEvento`,`Palestrante_Pessoa_idPessoa`,`Sala_idSala`) VALUES (4,"Samuel","leo. Vivamus nibh dolor, nonummy ac, feugiat non, lobortis quis,",
-26,2,1,33,8);
-INSERT INTO `eventos`.`atividade` (`idAtividade`,`titulo`,`descricao`,`limiteInscricoes`,`TipoAtividade_idTipoAtividade`,`Evento_idEvento`,`Palestrante_Pessoa_idPessoa`,`Sala_idSala`) VALUES (5,"Xavier","enim, gravida sit amet, dapibus id, blandit at, nisi. Cum",
-21,3,2,34,6);
-INSERT INTO `eventos`.`atividade` (`idAtividade`,`titulo`,`descricao`,`limiteInscricoes`,`TipoAtividade_idTipoAtividade`,`Evento_idEvento`,`Palestrante_Pessoa_idPessoa`,`Sala_idSala`) VALUES (6,"Richard","Proin sed turpis nec mauris blandit mattis. Cras eget nisi",
-39,3,2,33,1);
-INSERT INTO `eventos`.`atividade` (`idAtividade`,`titulo`,`descricao`,`limiteInscricoes`,`TipoAtividade_idTipoAtividade`,`Evento_idEvento`,`Palestrante_Pessoa_idPessoa`,`Sala_idSala`) VALUES (7,"Wayne","ultrices sit amet, risus. Donec nibh enim, gravida sit amet,",
-34,3,2,34,1);
-INSERT INTO `eventos`.`atividade` (`idAtividade`,`titulo`,`descricao`,`limiteInscricoes`,`TipoAtividade_idTipoAtividade`,`Evento_idEvento`,`Palestrante_Pessoa_idPessoa`,`Sala_idSala`) VALUES (8,"Mark","erat volutpat. Nulla dignissim. Maecenas ornare egestas ligula. Nullam feugiat",
-22,2,2,36,4);
-INSERT INTO `eventos`.`atividade` (`idAtividade`,`titulo`,`descricao`,`limiteInscricoes`,`TipoAtividade_idTipoAtividade`,`Evento_idEvento`,`Palestrante_Pessoa_idPessoa`,`Sala_idSala`) VALUES (9,"Richard","luctus et ultrices posuere cubilia Curae; Phasellus ornare. Fusce mollis.",
-39,1,1,31,2);
-INSERT INTO `eventos`.`atividade` (`idAtividade`,`titulo`,`descricao`,`limiteInscricoes`,`TipoAtividade_idTipoAtividade`,`Evento_idEvento`,`Palestrante_Pessoa_idPessoa`,`Sala_idSala`) VALUES (10,"Asher","ut, molestie in, tempus eu, ligula. Aenean euismod mauris eu",
-26,3,2,31,5);
-INSERT INTO `eventos`.`atividade` (`idAtividade`,`titulo`,`descricao`,`limiteInscricoes`,`TipoAtividade_idTipoAtividade`,`Evento_idEvento`,`Palestrante_Pessoa_idPessoa`,`Sala_idSala`) VALUES (11,"Graham","ac tellus. Suspendisse sed dolor. Fusce mi lorem, vehicula et,",
-31,2,2,33,6);
-INSERT INTO `eventos`.`atividade` (`idAtividade`,`titulo`,`descricao`,`limiteInscricoes`,`TipoAtividade_idTipoAtividade`,`Evento_idEvento`,`Palestrante_Pessoa_idPessoa`,`Sala_idSala`) VALUES (12,"Arsenio","ornare, libero at auctor ullamcorper, nisl arcu iaculis enim, sit",
-32,2,1,37,8);
-INSERT INTO `eventos`.`atividade` (`idAtividade`,`titulo`,`descricao`,`limiteInscricoes`,`TipoAtividade_idTipoAtividade`,`Evento_idEvento`,`Palestrante_Pessoa_idPessoa`,`Sala_idSala`) VALUES (13,"Hop","molestie orci tincidunt adipiscing. Mauris molestie pharetra nibh. Aliquam ornare,",
-31,3,1,34,2);
-INSERT INTO `eventos`.`atividade` (`idAtividade`,`titulo`,`descricao`,`limiteInscricoes`,`TipoAtividade_idTipoAtividade`,`Evento_idEvento`,`Palestrante_Pessoa_idPessoa`,`Sala_idSala`) VALUES (14,"Francis","Morbi quis urna. Nunc quis arcu vel quam dignissim pharetra.",
-30,1,2,37,8);
-INSERT INTO `eventos`.`atividade` (`idAtividade`,`titulo`,`descricao`,`limiteInscricoes`,`TipoAtividade_idTipoAtividade`,`Evento_idEvento`,`Palestrante_Pessoa_idPessoa`,`Sala_idSala`) VALUES (15,"Hamish","ornare egestas ligula. Nullam feugiat placerat velit. Quisque varius. Nam",
-32,3,1,35,8);
-INSERT INTO `eventos`.`atividade` (`idAtividade`,`titulo`,`descricao`,`limiteInscricoes`,`TipoAtividade_idTipoAtividade`,`Evento_idEvento`,`Palestrante_Pessoa_idPessoa`,`Sala_idSala`) VALUES (16,"Hector","lacinia mattis. Integer eu lacus. Quisque imperdiet, erat nonummy ultricies",
-40,3,2,34,2);
-INSERT INTO `eventos`.`atividade` (`idAtividade`,`titulo`,`descricao`,`limiteInscricoes`,`TipoAtividade_idTipoAtividade`,`Evento_idEvento`,`Palestrante_Pessoa_idPessoa`,`Sala_idSala`) VALUES (17,"Norman","Mauris quis turpis vitae purus gravida sagittis. Duis gravida. Praesent",
-23,1,1,36,5);
-INSERT INTO `eventos`.`atividade` (`idAtividade`,`titulo`,`descricao`,`limiteInscricoes`,`TipoAtividade_idTipoAtividade`,`Evento_idEvento`,`Palestrante_Pessoa_idPessoa`,`Sala_idSala`) VALUES (18,"Joseph","habitant morbi tristique senectus et netus et malesuada fames ac",
-27,3,1,40,8);
-INSERT INTO `eventos`.`atividade` (`idAtividade`,`titulo`,`descricao`,`limiteInscricoes`,`TipoAtividade_idTipoAtividade`,`Evento_idEvento`,`Palestrante_Pessoa_idPessoa`,`Sala_idSala`) VALUES (19,"Jackson","sed pede nec ante blandit viverra. Donec tempus, lorem fringilla",
-31,3,2,39,1);
-INSERT INTO `eventos`.`atividade` (`idAtividade`,`titulo`,`descricao`,`limiteInscricoes`,`TipoAtividade_idTipoAtividade`,`Evento_idEvento`,`Palestrante_Pessoa_idPessoa`,`Sala_idSala`) VALUES (20,"Aaron","erat. Vivamus nisi. Mauris nulla. Integer urna. Vivamus molestie dapibus",
-34,3,1,37,8);
+INSERT INTO `eventos`.`atividade` (`idAtividade`,`titulo`,`descricao`,`limiteInscricoes`,`TipoAtividade_idTipoAtividade`,`Evento_idEvento`,`Palestrante_Pessoa_idPessoa`,`Sala_idSala`, `CargaHoraria_idCargaHoraria`) VALUES (1,"Fundamentos de Gerenciamento de Projetos","dapibus rutrum, justo. Praesent luctus. Curabitur egestas nunc sed libero.", 21,3,2,39,1, 1 );
+INSERT INTO `eventos`.`atividade` (`idAtividade`,`titulo`,`descricao`,`limiteInscricoes`,`TipoAtividade_idTipoAtividade`,`Evento_idEvento`,`Palestrante_Pessoa_idPessoa`,`Sala_idSala`, `CargaHoraria_idCargaHoraria`) VALUES (2,"Utilização de óleo vegetal residual como incentivo a educação ambiental","nec ante. Maecenas mi felis, adipiscing fringilla, porttitor vulputate, posuere", 25,1,1,37,7, 2 );
+INSERT INTO `eventos`.`atividade` (`idAtividade`,`titulo`,`descricao`,`limiteInscricoes`,`TipoAtividade_idTipoAtividade`,`Evento_idEvento`,`Palestrante_Pessoa_idPessoa`,`Sala_idSala`, `CargaHoraria_idCargaHoraria`) VALUES (3,"Arte e saúde mental: vivenciando a cor a partir da aquarela","blandit viverra. Donec tempus, lorem fringilla ornare placerat, orci lacus", 27,2,2,37,2, 3 );
+INSERT INTO `eventos`.`atividade` (`idAtividade`,`titulo`,`descricao`,`limiteInscricoes`,`TipoAtividade_idTipoAtividade`,`Evento_idEvento`,`Palestrante_Pessoa_idPessoa`,`Sala_idSala`, `CargaHoraria_idCargaHoraria`) VALUES (4,"Técnicas em aquarela para iniciantes","leo. Vivamus nibh dolor, nonummy ac, feugiat non, lobortis quis,", 26,2,1,33,8, 4 );
+INSERT INTO `eventos`.`atividade` (`idAtividade`,`titulo`,`descricao`,`limiteInscricoes`,`TipoAtividade_idTipoAtividade`,`Evento_idEvento`,`Palestrante_Pessoa_idPessoa`,`Sala_idSala`, `CargaHoraria_idCargaHoraria`) VALUES (5,"Introdução às planilhas eletrônicas","enim, gravida sit amet, dapibus id, blandit at, nisi. Cum", 21,3,2,34,6, 1 );
+INSERT INTO `eventos`.`atividade` (`idAtividade`,`titulo`,`descricao`,`limiteInscricoes`,`TipoAtividade_idTipoAtividade`,`Evento_idEvento`,`Palestrante_Pessoa_idPessoa`,`Sala_idSala`, `CargaHoraria_idCargaHoraria`) VALUES (6,"O que corre em suas veias? Introdução ao estudo de células sanguíneas","Proin sed turpis nec mauris blandit mattis. Cras eget nisi", 39,3,2,33,1, 2 );
+INSERT INTO `eventos`.`atividade` (`idAtividade`,`titulo`,`descricao`,`limiteInscricoes`,`TipoAtividade_idTipoAtividade`,`Evento_idEvento`,`Palestrante_Pessoa_idPessoa`,`Sala_idSala`, `CargaHoraria_idCargaHoraria`) VALUES (7,"Photoshop","ultrices sit amet, risus. Donec nibh enim, gravida sit amet,", 34,3,2,34,1, 3 );
+INSERT INTO `eventos`.`atividade` (`idAtividade`,`titulo`,`descricao`,`limiteInscricoes`,`TipoAtividade_idTipoAtividade`,`Evento_idEvento`,`Palestrante_Pessoa_idPessoa`,`Sala_idSala`, `CargaHoraria_idCargaHoraria`) VALUES (8,"Robótica no desenvolvimento da lógica de programação","erat volutpat. Nulla dignissim. Maecenas ornare egestas ligula. Nullam feugiat",22,2,2,36,4, 4 );
+INSERT INTO `eventos`.`atividade` (`idAtividade`,`titulo`,`descricao`,`limiteInscricoes`,`TipoAtividade_idTipoAtividade`,`Evento_idEvento`,`Palestrante_Pessoa_idPessoa`,`Sala_idSala`, `CargaHoraria_idCargaHoraria`) VALUES (9,"Noção básica de programação de Jogos 2D no Construct 2","luctus et ultrices posuere cubilia Curae; Phasellus ornare. Fusce mollis.",39,1,1,31,2, 1 );
+INSERT INTO `eventos`.`atividade` (`idAtividade`,`titulo`,`descricao`,`limiteInscricoes`,`TipoAtividade_idTipoAtividade`,`Evento_idEvento`,`Palestrante_Pessoa_idPessoa`,`Sala_idSala`, `CargaHoraria_idCargaHoraria`) VALUES (10,"A Tecnologia Blockchain do Zero: Aplicações e Impactos","ut, molestie in, tempus eu, ligula. Aenean euismod mauris eu",26,3,2,31,5, 2 );
+INSERT INTO `eventos`.`atividade` (`idAtividade`,`titulo`,`descricao`,`limiteInscricoes`,`TipoAtividade_idTipoAtividade`,`Evento_idEvento`,`Palestrante_Pessoa_idPessoa`,`Sala_idSala`, `CargaHoraria_idCargaHoraria`) VALUES (11,"Arquitetura contemporânea e o mundo do trabalho","ac tellus. Suspendisse sed dolor. Fusce mi lorem, vehicula et,",31,2,2,33,6, 3 );
+INSERT INTO `eventos`.`atividade` (`idAtividade`,`titulo`,`descricao`,`limiteInscricoes`,`TipoAtividade_idTipoAtividade`,`Evento_idEvento`,`Palestrante_Pessoa_idPessoa`,`Sala_idSala`, `CargaHoraria_idCargaHoraria`) VALUES (12,"Relatórios com JasperReports e iReport Designer","ornare, libero at auctor ullamcorper, nisl arcu iaculis enim, sit",32,2,1,37,8, 4 );
+INSERT INTO `eventos`.`atividade` (`idAtividade`,`titulo`,`descricao`,`limiteInscricoes`,`TipoAtividade_idTipoAtividade`,`Evento_idEvento`,`Palestrante_Pessoa_idPessoa`,`Sala_idSala`, `CargaHoraria_idCargaHoraria`) VALUES (13,"Utilização de óleo vegetal  residual como incentivo a educação ambiental","molestie orci tincidunt adipiscing. Mauris molestie pharetra nibh. Aliquam ornare,",31,3,1,34,2, 1 );
+INSERT INTO `eventos`.`atividade` (`idAtividade`,`titulo`,`descricao`,`limiteInscricoes`,`TipoAtividade_idTipoAtividade`,`Evento_idEvento`,`Palestrante_Pessoa_idPessoa`,`Sala_idSala`, `CargaHoraria_idCargaHoraria`) VALUES (14,"Lei das Águas","Morbi quis urna. Nunc quis arcu vel quam dignissim pharetra.",30,1,2,37,8, 2 );
+INSERT INTO `eventos`.`atividade` (`idAtividade`,`titulo`,`descricao`,`limiteInscricoes`,`TipoAtividade_idTipoAtividade`,`Evento_idEvento`,`Palestrante_Pessoa_idPessoa`,`Sala_idSala`, `CargaHoraria_idCargaHoraria`) VALUES (15,"O aprendizado da Libras por meio da música","ornare egestas ligula. Nullam feugiat placerat velit. Quisque varius. Nam",32,3,1,35,8, 3 );
+INSERT INTO `eventos`.`atividade` (`idAtividade`,`titulo`,`descricao`,`limiteInscricoes`,`TipoAtividade_idTipoAtividade`,`Evento_idEvento`,`Palestrante_Pessoa_idPessoa`,`Sala_idSala`, `CargaHoraria_idCargaHoraria`) VALUES (16,"Introdução à planilhas eletrônicas","lacinia mattis. Integer eu lacus. Quisque imperdiet, erat nonummy ultricies",40,3,2,34,2, 4 );
+INSERT INTO `eventos`.`atividade` (`idAtividade`,`titulo`,`descricao`,`limiteInscricoes`,`TipoAtividade_idTipoAtividade`,`Evento_idEvento`,`Palestrante_Pessoa_idPessoa`,`Sala_idSala`, `CargaHoraria_idCargaHoraria`) VALUES (17,"Arte e saúde mental: vivenciando a cor a partir da aquarela","Mauris quis turpis vitae purus gravida sagittis. Duis gravida. Praesent",23,1,1,36,5, 1 );
+INSERT INTO `eventos`.`atividade` (`idAtividade`,`titulo`,`descricao`,`limiteInscricoes`,`TipoAtividade_idTipoAtividade`,`Evento_idEvento`,`Palestrante_Pessoa_idPessoa`,`Sala_idSala`, `CargaHoraria_idCargaHoraria`) VALUES (18,"Produção de mudas","habitant morbi tristique senectus et netus et malesuada fames ac",27,3,1,40,8, 2 );
+INSERT INTO `eventos`.`atividade` (`idAtividade`,`titulo`,`descricao`,`limiteInscricoes`,`TipoAtividade_idTipoAtividade`,`Evento_idEvento`,`Palestrante_Pessoa_idPessoa`,`Sala_idSala`, `CargaHoraria_idCargaHoraria`) VALUES (19,"Cenários Econômicos","sed pede nec ante blandit viverra. Donec tempus, lorem fringilla",31,3,2,39,1, 3 );
+INSERT INTO `eventos`.`atividade` (`idAtividade`,`titulo`,`descricao`,`limiteInscricoes`,`TipoAtividade_idTipoAtividade`,`Evento_idEvento`,`Palestrante_Pessoa_idPessoa`,`Sala_idSala`, `CargaHoraria_idCargaHoraria`) VALUES (20,"Como elaborar um currículo?","erat. Vivamus nisi. Mauris nulla. Integer urna. Vivamus molestie dapibus",34,3,1,37,8, 4 );
