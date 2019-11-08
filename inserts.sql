@@ -257,7 +257,6 @@ INSERT INTO `eventos`.`inscricaoatividade` (`idInscricaoAtividade`,`Atividade_id
 INSERT INTO `eventos`.`inscricaoatividade` (`idInscricaoAtividade`,`Atividade_idAtividade`,`Inscricao_idInscricao`,`dataPagamento`) VALUES (28,2,27,"1969-12-31");
 INSERT INTO `eventos`.`inscricaoatividade` (`idInscricaoAtividade`,`Atividade_idAtividade`,`Inscricao_idInscricao`,`dataPagamento`) VALUES (29,16,28, NULL);
 INSERT INTO `eventos`.`inscricaoatividade` (`idInscricaoAtividade`,`Atividade_idAtividade`,`Inscricao_idInscricao`,`dataPagamento`) VALUES (30,15,29,"1969-12-31");
-INSERT INTO `eventos`.`inscricaoatividade` (`idInscricaoAtividade`,`Atividade_idAtividade`,`Inscricao_idInscricao`,`dataPagamento`) VALUES (31,6,30,"1969-12-31");
 
 /*  Despesas    */
 INSERT INTO `eventos`.`despesa` (`idDespesa`,`Descricao`,`data`,`valor`,`Atividade_idAtividade`,`Evento_idEvento`) VALUES (1,"orci luctus et ultrices","2019-08-30",1,NULL,2);
