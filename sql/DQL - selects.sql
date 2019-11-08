@@ -145,13 +145,19 @@ ORDER BY atividade.data
 
 -- 2.9) Uma consulta que demonstre qual foi o total de arrecadação com as inscrições e o total de despesas de um determinado evento;
 
-
 SELECT 
-    evento.nome, SUM(despesa.valor) as totalDespesa FROM evento
+    evento.nome, SUM(despesa.valor) as totalDespesa , 
+    ( SELECT SUM( atividade.valor ) FROM  atividade 
+    INNER JOIN inscricaoatividade 
+    ON inscricaoatividade.Atividade_idAtividade = atividade.idAtividade
+    WHERE inscricaoatividade.dataPagamento IS NOT NULL AND atividade.Evento_idEvento = 2 )
+    AS `total arrecadacao por inscrição`
+FROM evento
 INNER JOIN Despesa ON despesa.Evento_idEvento = evento.idEvento
-WHERE evento.idEvento = 2 
+WHERE evento.idEvento = 2
 GROUP BY evento.nome
 ORDER BY totalDespesa DESC;
+
 
 -- 	2.10) Lista com nome, função e contato de todos os organizadores vinculados a um evento; 
 
